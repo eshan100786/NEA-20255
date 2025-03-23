@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; 
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* all content related to questions */
+main {
+  max-width: 1300px; /* keep main compact and easy to read */
+  margin-left: auto;
+  margin-right: auto; /* centre main */
+  padding: 20px; /* space */
+  text-align: center;
+  justify-content: center;
+  align-items: center; /* centre children elements horizontally and vertically */
+  height: 50vh; /* take up 50% of viewport height */
+}
+
+/* canvas toolbar */
+.controls {
+  border: 2px solid #000; /* black outline */
+  background-color: #e2ddef; /* controls background colour of light purple */
+  display: flex; /* control buttons align in a column */
+  flex-direction: column;
+  padding: 8px;
+  padding-right: 20px; /* space for the buttons */
+}
+
+/* canvas drawing pad */
+canvas {
+  border: 2px solid #000; /* black outline */
+  background-color: #dae8fc; /* nice blue canvas for drawing */
+  width: 100%; /* fill screen and container */
+  height: 100%;
+}
+
+/* canvas container that holds controls and canvas */
+.container {
+  width: 100%;
+  height: 50vh; 
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+/* space between buttons in toolbar */
+.controls > * {
+  margin: 8px;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  max-width: 150px;
+}
+
+button:hover {
+  background-color: #45a049;
+  scale: 1.1;
+}
+
+.inputs123 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  padding: 15px;
+}
+
+.inputs123 label {
+  text-align: center;
+}
+
+.labeltext {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#solvebutton {
+  margin-top: 10px;
+}
+
+/* Final score and grade text styling */
+.final-score {
+  font-size: 24px; /* Increase the font size */
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333; /* Darker color for better visibility */
+}
+
+.final-grade {
+  font-size: 32px; /* Make the grade text bigger */
+  font-weight: bold;
+  color: #4caf50; /* Green color for a positive grade */
+  margin-top: 10px;
+}
+
+header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  padding: 10px;
+}

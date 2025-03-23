@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    margin: 0;
+    padding: 0;
+    background-color: #d6daec; /* Soft background color */
+}
+
+.tutorial-container {
+    max-width: 1500px; /* Limit width for large screens */
+    margin: 0 auto; /* Center the container */
+    padding: 40px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr 1fr; /* Equal space for two columns */
+    gap: 20px; /* Space between teacher and student sections */
+    padding-top: 140px; /* Extra padding for the fixed back button */
+}
+
+.teacher-tutorial,
+.student-tutorial {
+    line-height: 1.2; /* Improve readability */
+}
+
+h2 {
+    font-size: 24px; /* Larger font for headings */
+    margin: 0 0 10px; /* Space below headings */
+}
+
+.button,
+#backLink button {
+    display: inline-block;
+    padding: 10px 20px; /* Padding for button size */
+    width: 100px; /* Fixed width for consistency */
+    margin: 10px; /* Space around buttons */
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    font-size: 16px; /* Readable font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, scale 0.3s ease; /* Smooth hover effects */
+}
+
+.button:hover,
+#backLink button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    scale: 1.1; /* Slightly enlarge on hover */
+}
+
+#backButtonContainer {
+    position: fixed; /* Fixed position for visibility */
+    top: 20px;
+    left: 20px;
+    margin-bottom: 30px; /* Add spacing below the back button */
+}
+
+#backLink button {
+    padding: 15px 30px; /* Larger padding for better size */
+    width: auto; /* Auto width for flexible sizing */
+}
+
+@media (max-width: 1000px) {
+    .tutorial-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: auto auto; /* Two rows */
+        gap: 40px; /* Increase gap for better spacing */
+        padding-bottom: 120px; /* Adjust padding for smaller screens */
+    }}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Mode - Multiplication Test</title>
+    <link rel="stylesheet" href="design-student-teacher-mode.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Multiplication Test</h1>
+      <div class="question">
+        <h2 id="questionNumber"></h2>
+        <h2>
+          Calculate the product of:
+          <span id="equation"></span>
+        </h2>
+        <div class="inputs123">
+          <label class="labeltext" for="answerInput">Enter your answer:</label>
+          <input type="text" id="answerInput" />
+        </div>
+        <button id="solveButton">Solve</button>
+        <p id="solution"></p>
+      </div>
+    </main>
+    <div class="container">
+      <div class="controls">
+        <p>Draw!</p>
+        <input type="color" id="colorPicker" value="#000000" />
+        <label for="thicknessSlider">Line Thickness:</label>
+        <input type="range" id="thicknessSlider" min="1" max="20" value="5" />
+        <button id="clearButton">Clear</button>
+      </div>
+      <canvas id="drawCanvas"></canvas>
+    </div>
+    <script src="student-logic-multiplication.js"></script>
+  </body>
+</html>

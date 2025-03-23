@@ -1,0 +1,67 @@
+/* CSS for studenttopic.html */
+
+body {
+  font-family: Arial, sans-serif; /* Clean, readable font */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for centering */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px; /* Space below the header */
+}
+
+h1 {
+  font-size: 36px; /* Large font for the main heading */
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center buttons horizontally */
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 50px; /* Padding for button size */
+  width: 100px; /* Fixed width for consistency */
+  margin: 10px; /* Space around buttons */
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+  transition: background-color 0.3s ease, scale 0.3s ease; /* Smooth hover effects */
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  scale: 1.1; /* Slightly enlarge on hover */
+}
+
+#backButtonContainer {
+  position: fixed; /* Fixed position for visibility */
+  top: 20px;
+  left: 20px;
+}
+
+#backLink button {
+  padding: 10px 20px; /* Padding for button size */
+  border: none;
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  font-size: 16px; /* Readable font size */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, scale 0.3s ease; /* Smooth hover effects */
+}
+
+#backLink button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  scale: 1.1; /* Slightly enlarge on hover */
+}

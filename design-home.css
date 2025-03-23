@@ -1,0 +1,38 @@
+body {
+    font-family: Arial; /* Set Arial for entire page */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Ensure the body takes the full viewport height */
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 34px; /* Make the header text larger for emphasis */
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center buttons horizontally in the container */
+    row-gap: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 20px 50px;
+    width: 150px;
+    background-color: #4caf50; /* Primary green color for the button */
+    color: white;
+    border: none; /* Remove button borders */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centre text to middle of button */
+    text-decoration: none; /* Remove useless link text */
+  }
+  
+  .button:hover {
+    background-color: #45a049; /* Darken the button on hover for interactivity */
+    scale: 1.1; /* Slightly enlarge the button on hover */
+  }
+
