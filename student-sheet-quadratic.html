@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Mode - Quadratic Test</title>
+    <link rel="stylesheet" href="design-student-teacher-mode.css" />
+  </head>
+  
+  <body>
+    <main> <!-- contains the questions and input and the blank elements -->
+      <h1>Quadratic Equation Test</h1> 
+      <div class="question">
+        <h2>
+          Solve the quadratic equation for x (2dp): <!-- question text which doesn't change -->
+          <span id="equation"></span> <!-- equation to be generated -->
+        </h2>
+        <div class="inputs123"> <!-- label and the text input box for answers -->
+          <label class="labeltext" for="x1Input">Enter your solution for x₁:</label>
+          <input type="text" id="x1Input" />
+        </div>
+        <div class="inputs123"> <!-- label and the text input box for answers -->
+          <label class="labeltext" for="x2Input">Enter your solution for x₂:</label>
+          <input type="text" id="x2Input" />
+        </div>
+        <button id="solveButton">Solve</button>
+        <p id="solution"></p>
+        <p id="score"></p> 
+      </div>
+    </main>
+    <div class="container"> <!-- contains the whole cnavas and toolbar -->
+      <div class="controls"> <!-- controls and buttons/toolbar of canvas -->
+        <p>Draw!</p>
+        <input type="color" id="colorPicker" value="#000000" />
+        <label for="thicknessSlider">Line Thickness:</label>
+        <input type="range" id="thicknessSlider" min="1" max="20" value="5"/>
+        <button id="clearButton">Clear</button>
+      </div>
+      <canvas id="drawCanvas"></canvas> <!-- canvas -->
+    </div>
+    <script src="student-logic-quadratic.js"></script> <!-- Links to the JS file --> <!--  -->
+  </body>
+</html>
